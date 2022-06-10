@@ -1,0 +1,242 @@
+/* main color of the text #212121 */
+/* second color of the text #757575 */
+/* accent #2196F3 */
+/* white  color #ffffff */
+/* dice #2F303A */
+
+
+
+:root{
+    --primari-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --dice-color: #2F303A;
+    --white-color: #ffffff;
+}
+
+
+
+
+/* BODY */
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white-color);
+    color: var(--primari-text-color);
+}
+
+/* all list mark */
+.list{
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+}
+
+/* all section style */
+.section-title{
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+}
+
+.section-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+}
+
+/* HEADER STYLE */
+
+/* logo */
+.logo{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.logo-web{
+    color: var(--accent-color);
+}
+
+/* navigation */
+.navigation{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+    
+}
+
+.contacts{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--primari-text-color);
+
+}
+
+
+/* hover and focus for link */
+.navigation a:hover,
+.navigation a:focus,
+.contacts a:hover,
+.contacts a:focus{
+    color: var(--accent-color);
+}
+
+
+/* MAIN CONTENT STYLE (index) */
+
+/* hero style */
+.hero{
+    background-color: var(--dice-color);
+}
+
+.hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color); 
+}
+
+/* buton hero style */
+
+.button-hero{
+    border-style: none;
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    color: var(--white-color)
+}
+
+.button-hero:hover{
+    background-color: #F5F4FA;
+    cursor: pointer;
+    color: var(--title-text-color);
+}
+
+/* benefits style */
+
+.benefits .title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+
+.benefits .text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+/* what we do style */
+.work .title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+/* Oure team style */
+.team{
+    background-color: #F5F4FA;
+}
+
+.team .title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.second-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.team .text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primari-text-color);
+}
+
+/* MAIN CONTENT STYLE (portfolio) */
+
+/* button style */
+.button{
+    border-style: none;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+
+.button:hover{
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+
+
+/* FOOTER STYLE */
+
+.footer{
+    background-color: var(--dice-color);
+}
+
+/* logo */
+.logo-white{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.logo-web{
+    color: var(--accent-color);
+}
+
+.adress{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+}
+
+.contacts-footer{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+}

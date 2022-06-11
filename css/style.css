@@ -24,6 +24,7 @@
 
 /* BODY */
 body{
+    font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
     background-color: var(--white-color);
     color: var(--primari-text-color);
@@ -134,7 +135,16 @@ body{
     background-color: var(--accent-color);
     border-radius: 4px;
     color: var(--white-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    font-family: 'Roboto', sans-serif;
     cursor: pointer;
+    
 }
 
 .hero .button:hover,
@@ -185,7 +195,7 @@ body{
     color: var(--title-text-color);
 }
 
-.second-title{
+.section-title{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
@@ -214,6 +224,12 @@ body{
     border-style: none;
     background-color: var(--background-button);
     border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-family: 'Roboto', sans-serif;
     cursor: pointer;
 }
 

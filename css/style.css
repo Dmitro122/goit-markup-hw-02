@@ -195,7 +195,7 @@ body{
     color: var(--title-text-color);
 }
 
-.section-title{
+.team .section-title{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
@@ -239,6 +239,19 @@ body{
     color: var(--white-color);
 }
 
+.portfolio .section-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio .section-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+}
 
 
 /* FOOTER STYLE */

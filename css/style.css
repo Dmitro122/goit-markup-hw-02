@@ -3,6 +3,8 @@
 /* accent #2196F3 */
 /* white  color #ffffff */
 /* dice #2F303A */
+/* black color #000000 */
+/* accent link rgba(255, 255, 255, 0.6); */
 
 
 
@@ -12,6 +14,9 @@
     --accent-color: #2196F3;
     --dice-color: #2F303A;
     --white-color: #ffffff;
+    --black-color: #000000;
+    --accent-link: rgba(255, 255, 255, 0.6);
+    --background-button: #F5F4FA;
 }
 
 
@@ -33,19 +38,20 @@ body{
     text-decoration: none;
 }
 
+
 /* all section style */
 .section-title{
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
     letter-spacing: 0.06em;
 }
 
 .section-text{
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.875;
     letter-spacing: 0.03em;
 }
 
@@ -56,9 +62,9 @@ body{
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.2;
     letter-spacing: 0.03em;
-    color: #000000;
+    color: var(--black-color);
 }
 
 .logo-web{
@@ -69,7 +75,7 @@ body{
 .navigation{
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
     
@@ -78,18 +84,27 @@ body{
 .contacts{
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primari-text-color);
 
 }
 
+.navigation .link.current{
+    color: var(--accent-color);
+}
+
+.navigation .link{
+    color: var(--title-text-color);
+}
+
+
 
 /* hover and focus for link */
-.navigation a:hover,
-.navigation a:focus,
-.contacts a:hover,
-.contacts a:focus{
+.navigation .link:hover,
+.navigation .link:focus,
+.contacts .link:hover,
+.contacts .link:focus{
     color: var(--accent-color);
 }
 
@@ -104,25 +119,27 @@ body{
 .hero-title{
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color); 
+    cursor: pointer;
 }
 
 /* buton hero style */
 
-.button-hero{
+.hero .button{
     border-style: none;
     background-color: var(--accent-color);
     border-radius: 4px;
-    color: var(--white-color)
+    color: var(--white-color);
+    cursor: pointer;
 }
 
-.button-hero:hover{
-    background-color: #F5F4FA;
-    cursor: pointer;
+.hero .button:hover,
+.hero .button:focus{
+    background-color: var(--background-button);
     color: var(--title-text-color);
 }
 
@@ -131,7 +148,7 @@ body{
 .benefits .title{
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-text-color);
@@ -140,7 +157,7 @@ body{
 .benefits .text{
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
 }
 
@@ -148,7 +165,7 @@ body{
 .work .title{
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
@@ -156,13 +173,13 @@ body{
 
 /* Oure team style */
 .team{
-    background-color: #F5F4FA;
+    background-color: var(--background-button);
 }
 
 .team .title{
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
@@ -171,7 +188,7 @@ body{
 .second-title{
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
@@ -180,10 +197,14 @@ body{
 .team .text{
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primari-text-color);
+}
+
+.element {
+    background-color: var(--white-color);
 }
 
 /* MAIN CONTENT STYLE (portfolio) */
@@ -191,14 +212,15 @@ body{
 /* button style */
 .button{
     border-style: none;
-    background-color: #F5F4FA;
+    background-color: var(--background-button);
     border-radius: 4px;
+    cursor: pointer;
 }
 
-.button:hover{
+.button:hover,
+.button:focus{
     background-color: var(--accent-color);
     color: var(--white-color);
-    cursor: pointer;
 }
 
 
@@ -214,7 +236,7 @@ body{
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.2;
     letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--white-color);
@@ -223,20 +245,27 @@ body{
 .logo-web{
     color: var(--accent-color);
 }
-
+/* footer link style */
 .adress{
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--white-color);
 }
 
-.contacts-footer{
+.footer .contacts{
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-
+    color: var(--accent-link);
 }
+
+.footer .link:hover,
+.footer .link:focus{
+    color: var(--accent-color);
+}
+
+
+
